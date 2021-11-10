@@ -4,7 +4,7 @@ from time import sleep, time
 
 start = 0
 running = False
-noise_length_threshold = "500ms"
+noise_length_threshold = "200ms"
 threshold_passed = False
 
 mod = Module()
