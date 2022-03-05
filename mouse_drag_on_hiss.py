@@ -4,7 +4,7 @@ from time import sleep, time
 
 start = 0
 running = False
-noise_length_threshold = "500ms"
+noise_length_threshold = "250ms"
 threshold_passed = False
 
 mod = Module()
@@ -45,10 +45,10 @@ noise.register('hiss', cursor_drag_on_hiss)
 
 
 def toggle_mouse_drag(active: bool):
-    if setting_mouse_enable_hiss_drag.get() == 0 and active: # allow turning off just not on
+    if setting_mouse_enable_hiss_drag.get() == 0 and active:  # allow turning off just not on
         return
 
-    #if eye_zoom_mouse.zoom_mouse.enabled or eye_mouse.mouse.attached_tracker is None:
+    # if eye_zoom_mouse.zoom_mouse.enabled or eye_mouse.mouse.attached_tracker is None:
     #    return
 
     if active:
